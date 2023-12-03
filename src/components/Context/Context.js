@@ -11,7 +11,7 @@ export const AppProvider = ({ children }) => {
   const fetchMovies = async () => {
     try {
       const res = await fetch(
-        `https://api.themoviedb.org/3/movie/popular?api_key=a50be0888f1f35a59ac91f7165933b27`
+        `https://api.themoviedb.org/3/movie/popular?api_key=secret ;)`
       );
       const data = await res.json();
       console.log(data);
